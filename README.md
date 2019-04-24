@@ -4,26 +4,23 @@ A curated, but probably biased and incomplete, list of awesome machine learning 
 
 If you want to contribute to this list (*and please do!*) read over the [contribution guidelines](contributing.md), send a pull request, or contact me [@jpatrickhall](https://twitter.com/jpatrickhall).
 
-
-
-## An incomplete, imperfect blueprint for a more human-friendly machine learning
- </br>(The resources in this repository can be used to do many of these things.)
-
-</br>![alt-text](https://github.com/h2oai/mli-resources/blob/master/blueprint.svg)
+**An incomplete, imperfect blueprint for a more human-centered, lower-risk machine learning.** The resources in this repository can be used to do many of these things today. *The resources in this repository should not be considered legal compliance advice.*
+![alt-text](https://github.com/h2oai/mli-resources/blob/master/blueprint.png)
 </br>Image credit: H2O.ai Machine Learning Interpretability team, https://github.com/h2oai/mli-resources.
 
 
 ## Table of Contents
 
 * [Comprehensive Software Examples and Tutorials](https://github.com/jphall663/awesome-machine-learning-interpretability#comprehensive-software-examples-and-tutorials)
-* Interpretability and Fairness Software Packages
+* Explainability- or Fairness-Enhancing Software Packages
+  * [Browser](https://github.com/jphall663/awesome-machine-learning-interpretability#browser)
   * [Python](https://github.com/jphall663/awesome-machine-learning-interpretability#python)
   * [R](https://github.com/jphall663/awesome-machine-learning-interpretability#r)
 * [Free Books](https://github.com/jphall663/awesome-machine-learning-interpretability#free-books)
-* [Other Interpretability and Fairness Lists](https://github.com/jphall663/awesome-machine-learning-interpretability#other-interpretability-and-fairness-lists)
-* [Review Papers](https://github.com/jphall663/awesome-machine-learning-interpretability#review-papers)
+* [Other Interpretability and Fairness Resources and Lists](https://github.com/jphall663/awesome-machine-learning-interpretability#other-interpretability-and-fairness-resources-and-lists)
+* [Review and General Papers](https://github.com/jphall663/awesome-machine-learning-interpretability#review-and-general-papers)
 * [Teaching Resources](https://github.com/jphall663/awesome-machine-learning-interpretability#teaching-resources)
-* Whitebox Modeling Packages
+* Interpretable ("Whitebox") or Fair Modeling Packages
   * [C/C++](https://github.com/jphall663/awesome-machine-learning-interpretability#cc)
   * [Python](https://github.com/jphall663/awesome-machine-learning-interpretability#python-1)
   * [R](https://github.com/jphall663/awesome-machine-learning-interpretability#r-1)
@@ -34,10 +31,16 @@ If you want to contribute to this list (*and please do!*) read over the [contrib
 * [IML](https://mybinder.org/v2/gh/christophM/iml/master?filepath=./notebooks/tutorial-intro.ipynb)
 * [Interpretable Machine Learning with Python](https://github.com/jphall663/interpretable_machine_learning_with_python)
 * [Interpreting Machine Learning Models with the iml Package](http://uc-r.github.io/iml-pkg)
+* [Machine Learning Explainability by Kaggle Learn](https://www.kaggle.com/learn/machine-learning-explainability)
 * [Model Interpretability with DALEX](http://uc-r.github.io/dalex)
+* Model Interpretation series by Dipanjan (DJ) Sarkar:
+  * [The Importance of Human Interpretable Machine Learning](https://towardsdatascience.com/human-interpretable-machine-learning-part-1-the-need-and-importance-of-model-interpretation-2ed758f5f476)
+  * [Model Interpretation Strategies](https://towardsdatascience.com/explainable-artificial-intelligence-part-2-model-interpretation-strategies-75d4afa6b739)
+  * [Hands-on Machine Learning Model Interpretation](https://towardsdatascience.com/explainable-artificial-intelligence-part-3-hands-on-machine-learning-model-interpretation-e8ebe5afc608)
+* [Partial Dependence Plots in R](https://journal.r-project.org/archive/2017/RJ-2017-016/)
 * [Visualizing ML Models with LIME](http://uc-r.github.io/lime)
 
-## Interpretability and Fairness Software Packages
+## Explainability- or Fairness-Enhancing Software Packages
 
 ### Browser
 
@@ -48,10 +51,17 @@ If you want to contribute to this list (*and please do!*) read over the [contrib
 * [aequitas](https://github.com/dssg/aequitas)
 * [AI Fairness 360](http://aif360.mybluemix.net)
 * [anchor](https://github.com/marcotcr/anchor)
-* [cleverhans](https://github.com/tensorflow/cleverhans)
+* [casme](https://github.com/kondiz/casme)
 * [ContrastiveExplanation (Foil Trees)](https://github.com/MarcelRobeer/ContrastiveExplanation)
+* [deeplift](https://github.com/kundajelab/deeplift)
+* [deepvis](https://github.com/yosinski/deep-visualization-toolbox)
 * [eli5](https://github.com/TeamHG-Memex/eli5)
 * [fairml](https://github.com/adebayoj/fairml)
+* [fairness](https://github.com/algofairness/fairness-comparison)
+* [foolbox](https://github.com/bethgelab/foolbox)
+* [Integrated-Gradients](https://github.com/ankurtaly/Integrated-Gradients)
+* [interpret_with_rules](https://github.com/clips/interpret_with_rules)
+* [lofo-importance](https://github.com/aerdem4/lofo-importance)
 * [L2X](https://github.com/Jianbo-Lab/L2X)
 * [lime](https://github.com/marcotcr/lime)
 * [PDPbox](https://github.com/SauceCat/PDPbox)
@@ -59,11 +69,16 @@ If you want to contribute to this list (*and please do!*) read over the [contrib
 * [PyCEbox](https://github.com/AustinRochford/PyCEbox)
 * [shap](https://github.com/slundberg/shap)
 * [Skater](https://github.com/datascienceinc/Skater)
+* [rationale](https://github.com/taolei87/rcnn/tree/master/code/rationale)
+* [tensorfow/cleverhans](https://github.com/tensorflow/cleverhans)
 * [tensorflow/lucid](https://github.com/tensorflow/lucid)
 * [tensorflow/model-analysis](https://github.com/tensorflow/model-analysis)
+* [tensorflow/privacy](https://github.com/tensorflow/privacy)
 * [Themis](https://github.com/LASER-UMASS/Themis)
 * [themis-ml](https://github.com/cosmicBboy/themis-ml)
 * [treeinterpreter](https://github.com/andosa/treeinterpreter)
+* [woe](https://github.com/boredbird/woe)
+* [xai](https://github.com/EthicalML/xai)
 
 ### R
 
@@ -71,46 +86,72 @@ If you want to contribute to this list (*and please do!*) read over the [contrib
 * [breakDown](https://pbiecek.github.io/breakDown/index.html)
 * [DALEX](https://github.com/pbiecek/DALEX)
 * [ExplainPrediction](https://github.com/rmarko/ExplainPrediction)
+* [featureImportance](https://github.com/giuseppec/featureImportance)
+* [forestmodel](https://cran.r-project.org/web/packages/forestmodel/index.html)
+* [fscaret](https://cran.r-project.org/web/packages/fscaret/)
 * [ICEbox](https://cran.r-project.org/web/packages/ICEbox/index.html)
 * [iml](https://github.com/christophM/iml)
 * [lightgbmExplainer](https://github.com/lantanacamara/lightgbmExplainer)
 * [lime](https://github.com/thomasp85/lime)
 * [live](https://cran.r-project.org/web/packages/live/index.html)
+* [mcr](https://github.com/aaronjfisher/mcr)
 * [pdp](https://bgreenwell.github.io/pdp/index.html)
 * [shapleyR](https://github.com/redichh/ShapleyR)
+* [shapper](https://cran.r-project.org/web/packages/shapper/index.html)
+* [smbinning](https://cran.r-project.org/web/packages/smbinning/index.html)
 * [vip](https://github.com/koalaverse/vip)
 * [xgboostExplainer](https://github.com/AppliedDataSciencePartners/xgboostExplainer)
 
 ## Free Books
 
-* [An Introduction to Machine Learning Interpretability](https://www.safaribooksonline.com/library/view/an-introduction-to/9781492033158/)
-* [Beyond Explainability: A Practical Guide to Managing Risk in Machine Learning Models](https://www.immuta.com/beyond/)
+* [Beyond Explainability: A Practical Guide to Managing Risk in Machine Learning Models](https://go.immuta.com/beyond-explainability-white-paper)
 * [Fairness and Machine Learning](http://fairmlbook.org/)
 * [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
 
-## Other Interpretability and Fairness Lists
+## Other Interpretability and Fairness Resources and Lists
 
+* [8 Principles of Responsible ML](https://ethical.institute/principles.html)
+* [ACM FAT* 2019 Youtube Playlist](https://www.youtube.com/playlist?list=PLXA0IWa3BpHk7fE8IH6wXNEfAZyr3A5Yb)
+* [An Introduction to Machine Learning Interpretability](https://pages.dataiku.com/oreilly-introduction-to-machine-learning-interpretability)
+* [Awesome interpretable machine learning](https://github.com/lopusz/awesome-interpretable-machine-learning) ;)
+* [Awesome machine learning operations](https://github.com/EthicalML/awesome-machine-learning-operations)
+* [algoaware](https://www.algoaware.eu/)
 * [criticalML](https://github.com/rockita/criticalML)
 * [Fairness, Accountability, and Transparency in Machine Learning (FAT/ML) Scholarship](https://www.fatml.org/resources/relevant-scholarship)
 * [Machine Learning Ethics References](https://github.com/radames/Machine-Learning-Ethics-References)
 * [Machine Learning Interpretability Resources](https://github.com/h2oai/mli-resources)
+* [MIT AI Ethics Reading Group](https://mitaiethics.github.io/)
+* [private-ai-resources](https://github.com/OpenMined/private-ai-resources)
+* [You Created A Machine Learning Application Now Make Sure It's Secure](https://www.oreilly.com/ideas/you-created-a-machine-learning-application-now-make-sure-its-secure)
+* [XAI Resources](https://github.com/pbiecek/xai_resources)
 
 ## Review and General Papers
 
+* [A Comparative Study of Fairness-Enhancing Interventions in Machine Learning](https://arxiv.org/pdf/1802.04422.pdf)
 * [A Survey Of Methods For Explaining Black Box Models](https://arxiv.org/pdf/1802.01933.pdf)
+* [A Marauder’s Map of Security and Privacy in Machine Learning](https://arxiv.org/pdf/1811.01134.pdf)
+* [Challenges for Transparency](https://arxiv.org/pdf/1708.01870.pdf)
 * [Explaining Explanations: An Approach to Evaluating Interpretability of Machine Learning](https://arxiv.org/pdf/1806.00069.pdf)
+* [Explanation in Human-AI Systems: A Literature Meta-Review, Synopsis of Key Ideas and Publications, and Bibliography for Explainable AI](https://arxiv.org/abs/1902.01876v1)
 * [On the Art and Science of Machine Learning Explanations](https://arxiv.org/pdf/1810.02909.pdf)
+* [On the Responsibility of Technologists: A Prologue and Primer](https://algo-stats.info/2018/04/15/on-the-responsibility-of-technologists-a-prologue-and-primer/)
+* [Please Stop Explaining Black Box Models for High-Stakes Decisions](https://arxiv.org/pdf/1811.10154.pdf)
 * [The Mythos of Model Interpretability](https://arxiv.org/pdf/1606.03490.pdf)
+* [The Promise and Peril of Human Evaluation for Model Interpretability](https://arxiv.org/pdf/1711.07414.pdf)
 * [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/pdf/1702.08608.pdf)
+* [The Security of Machine Learning](https://people.eecs.berkeley.edu/~adj/publications/paper-files/SecML-MLJ2010.pdf)
 * [Trends and Trajectories for Explainable, Accountable and Intelligible Systems: An HCI Research Agenda](https://dl.acm.org/citation.cfm?id=3174156)
+
+
 
 ## Teaching Resources
 
 * [An Introduction to Data Ethics](https://www.scu.edu/ethics/focus-areas/technology-ethics/resources/an-introduction-to-data-ethics/)
 * [Fairness in Machine Learning](https://fairmlclass.github.io/)
+* [Human-Center Machine Learning](http://courses.mpi-sws.org/hcml-ws18/)
 * [Practical Model Interpretability](https://github.com/jphall663/GWU_data_mining/blob/master/10_model_interpretability/10_model_interpretability.md)
 
-## Whitebox Modeling Packages
+## Interpretable ("Whitebox") or Fair Modeling Packages
 
 ### C/C++
 
@@ -129,13 +170,13 @@ If you want to contribute to this list (*and please do!*) read over the [contrib
 * [Monotonic](http://xgboost.readthedocs.io/en/latest/tutorials/monotonic.html) [XGBoost](http://xgboost.readthedocs.io/en/latest/)
 * [pyGAM](https://github.com/dswah/pyGAM)
 * [Risk-SLIM](https://github.com/ustunb/risk-SLIM)
-* [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)
 * Scikit-learn
   * [Decision Trees](http://scikit-learn.org/stable/modules/tree.html)
   * [Generalized Linear Models](http://scikit-learn.org/stable/modules/linear_model.html)
   * [Sparse Principal Components](http://scikit-learn.org/stable/modules/decomposition.html#sparse-principal-components-analysis-sparsepca-and-minibatchsparsepca)
+* [sklearn-expertsys](https://github.com/tmadl/sklearn-expertsys)
+* [skope-rules](https://github.com/scikit-learn-contrib/skope-rules)
 * [Super-sparse Linear Integer models (SLIMs)](https://github.com/ustunb/slim-python)
-* [woe](https://github.com/boredbird/woe)
 
 ### R
 
@@ -152,4 +193,3 @@ If you want to contribute to this list (*and please do!*) read over the [contrib
 * [rpart](https://cran.r-project.org/web/packages/rpart/index.html)
 * [RuleFit](http://statweb.stanford.edu/~jhf/R_RuleFit.html)
 * [Scalable Bayesian Rule Lists (SBRL)](https://users.cs.duke.edu/~cynthia/code/sbrl_1.0.tar.gz)
-* [smbinning](https://cran.r-project.org/web/packages/smbinning/index.html)
